@@ -95,9 +95,6 @@ window.onload = function()  {
         else    {
             // clear DB results for new kw search 
             allPinsToDisplay.clear();
-            //TODO clear heat map
-            // DO WE NEED TO DO THIS SINCE WE'RE USING MVCARRAY?
-
             // remove all kw specific listeners
             for (var kwIter=0; kwIter<keywords.length; kwIter++)    {
                 socket.removeListener(keywords[kwIter], tweetHandler);
