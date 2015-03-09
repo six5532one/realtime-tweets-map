@@ -1,0 +1,13 @@
+
+http://ec2805-realtimetweetmap.elasticbeanstalk.com/
+
+This app uses Node.js, Express and Socket.io to track tweets in the Twitter 
+Streaming API for multiple keywords. Tweet events are pushed over the 
+bidirectional socket to clients that subscribe to the keyword.
+
+The UI displays radio buttons that a user can use to select the keyword to search for. 
+When a radio button is selected and the user clicks the "Submit" button to confirm their 
+selected keyword, preexisting listeners on the client's socket are removed and 
+only a listener for this most recently selected keyword is bound to that client's socket. 
+When a user submits a new keyword selection, a database results listener is also bound 
+to the client that waits for the server to return items in the database that match the keyword. On each Tweet event, the server writes the geo coordinates to an AWS DynamoDB table corresponding to the keyword it filtered for.

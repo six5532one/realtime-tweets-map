@@ -1,0 +1,13 @@
+{
+    "name": "twitterstream",
+    "version": "0.0.1",
+    "author": "Emily Chen",
+    "private": true,
+    "dependencies": {
+        "express": "*",
+        "twitter": "*",
+        "socket.io": "*",
+        "jade": "*",
+        "aws-sdk": "*"
+    }
+}
