@@ -1,6 +1,6 @@
 
-[Video Demo](https://vimeo.com/121641331)
-==========================================
+Video demo [here](https://vimeo.com/121641331)!
+===================================================
 
 This app uses Node.js, Express and Socket.io to track tweets in the Twitter 
 Streaming API for multiple keywords. Tweet events are pushed over the 
