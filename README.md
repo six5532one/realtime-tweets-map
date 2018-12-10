@@ -1,5 +1,5 @@
 
-Video demo [here](https://vimeo.com/121641331)!
+Check out the [video demo](https://vimeo.com/121641331) !
 ===================================================
 
 This app uses Node.js, Express and Socket.io to track tweets in the Twitter 
